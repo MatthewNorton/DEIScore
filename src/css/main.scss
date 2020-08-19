@@ -1,0 +1,47 @@
+$wide: 1440px;
+$hd: 1360px;
+$desktop: 1028px;
+$tablet: 768px;
+
+$brand1: #033d58;
+$brand2: #009688;
+$brand3: #ff7c66;
+$brand4: #0087cc;
+$brand5: #fedb00;
+$gray1: #eeeeee;
+$gray2: #ababab;
+$gray3: #808080;
+$gray4: #454545;
+
+
+
+
+/* ================== LAYOUT =======================*/ 
+.main:nth-of-type(1) {
+    background:#fff;
+    // padding:0 20px;
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+}
+
+
+
+@import './vendor/materialize.css';
+@import './vendor/bootstrap.scss';
+@import './partials/base.scss';
+
+.mw-bs {
+    
+    @import './vendor/flow-reset.scss';
+    
+    // Components / Partials
+   
+
+    @import './partials/boxes.scss';
+    @import './partials/form-fields.scss';
+    @import './partials/navigation.scss';
+    @import './partials/homepage-header.scss'; 
+    @import './theme.scss'; 
+    // @import './vendor/custom/main.css';
+    // @import './vendor/custom/rehub.scss'; 
+    
+}
