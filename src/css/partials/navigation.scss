@@ -1,12 +1,19 @@
-.navbar {
-  margin-bottom: 0;
-  background: var(--secondary);
-  border: none;
-  border-radius: 0;
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: var(--wide);
+    margin: 0 auto;
+    background: var(--secondary);
+    border-radius: 0;
+    max-width: 100%;
 
    .container {
     max-width:100%;
-    width: var(--hd);
+    width: var(--wide);
     margin:0 auto;
     
   }
@@ -35,7 +42,7 @@
     > a {
       color: var(--accent);
       display: block;
-      font-size: 14px;
+      
       font-weight: 300;
       padding: 28px 15px;
       overflow: hidden;

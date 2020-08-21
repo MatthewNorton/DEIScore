@@ -19,23 +19,24 @@ p {
 // h2,
 // h3,
 // h5,
-.mw-bs {
-  font-family: fieldwork,sans-serif;
-  font-style: normal;
-  color: var(--g4);
-  font-size: 16px;
+  .main:nth-of-type(1) {
+    margin-top:0;
+    background:#fff;
+    // padding:0 20px;
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+  }
   .container {
     // max-width:100%;
     @media (min-width: $tablet) {
-      width: $desktop;
+      width: var(--desktop);
       
     }
     @media (min-width: $desktop) {
-      width: $hd;
+      width: var(--hd);
       
     }
     @media (min-width: $hd) {
-      width: $wide;
+      width: var(--wide);
       max-width:100%;
       margin:0 auto; 
       padding:0;
@@ -44,7 +45,7 @@ p {
     &:nth-of-type(1) #vertical > div:not(:nth-of-type(1))  {
       max-width:1440px; margin-left:auto; margin-right:auto;
     }
-  }
+  
 
 
   .btn {
@@ -136,4 +137,10 @@ p {
 @mixin grid($width, $gridcount) {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(calc(#{$width}/#{$gridcount}), 1fr));
+}
+
+
+/* ================== LAYOUT =======================*/ 
+.main:nth-of-type(1) {
+ 
 }
