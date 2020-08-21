@@ -2,37 +2,29 @@
 
 
 /* ================== LAYOUT =======================*/ 
-.main:nth-of-type(1) {
-    background:#fff;
-    // padding:0 20px;
-    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
-}
-
 
 
 // @import './vendor/materialize.css';
 // @import './vendor/bootstrap.scss';
 
 @import './variables.scss';
-
+@import './global.scss'; 
+@import './vendor/flow-reset.scss';
 .mw-bs {  
-    background:none;
-    font-family: fieldwork,sans-serif;
-    font-style: normal;
-    color: var(--g4);
-    font-size: 16px;
-    
+    @import './vendor/bootflat.scss';
+    @import './modules/helpers.scss'; 
     @import './partials/base.scss';
-    @import './vendor/flow-reset.scss';
+   
     
     // Components / Partials
    
 
-    @import './partials/boxes.scss';
+    @import './partials/boxes.scss'; 
     @import './partials/form-fields.scss';
     @import './partials/navigation.scss';
     @import './partials/banner.scss'; 
-    @import './theme.scss'; 
+    
+    // @import './theme.scss'; 
     // @import './vendor/custom/main.css';
     // @import './vendor/custom/rehub.scss'; 
     

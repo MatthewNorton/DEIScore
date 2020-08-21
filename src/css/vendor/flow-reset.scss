@@ -3,35 +3,33 @@ Flow Reset is to remove default styling from flow's existing stylesheets
 and bad styling decisions -_- WITHOUT using important tags. 
 ------------------------------------------------------------------------------ n*/
 
-// /* Fixes Spacing at the top */
-// .main:nth-of-type(1) { margin-top:0; }
-// /* Fixes spacing at the bottom */
 
-
-// // Mobile fix
-// @media(max-width:$hd) {
-//     .mw-bs{
-//         .main.container {
-//             padding-left:0;
-//             padding-right:0;
-//         }
-//         .main { margin-bottom: 0;}
-//     }
-
-// }
-
-#manywho-y {overflow:inherit}
-.page-label:empty{display:none;}
-
-.main-scroller {overflow-y:inherit} /* removes scroller within a scoller */
-.main-container-inner {overflow:inherit}
-
-label:empty {display:none}
-
-
-
-
-
-    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-        margin-left: initial; 
-    }
+#manywho {
+  overflow-y: inherit;
+  max-width:100%;
+}
+.page-label:empty {
+  display: none;
+}
+.main-container {
+  padding-left:0; padding-right:0;
+}
+.help-block:empty {display:none;}
+.mw-bs {
+    .main-scroller {
+        overflow-y: inherit;
+      } /* removes scroller within a scoller */
+      .main-container-inner {
+        overflow: inherit;
+      }
+      
+      label:empty {
+        display: none;
+      }
+      
+      .navbar > .container .navbar-brand,
+      .navbar > .container-fluid .navbar-brand {
+        margin-left: initial;
+      }
+      
+}

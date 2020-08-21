@@ -1,0 +1,42 @@
+* {
+    /* DO NOT ADD any other CSS to this class */
+    font-family: "Raleway", sans-serif;
+  }
+  html,body {height:100%;}
+  html {
+    font-weight: 100;
+    line-height: 1.4;
+  }
+  body {
+    color: #454545;
+    background: $color-secondary;
+    font-size: 16px;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    .fa {
+  
+      font-family:"Font Awesome 5 Brands";
+    }
+  }
+  .mw-bs {
+    background:initial;
+    font-family: fieldwork,sans-serif;
+    font-style: normal;
+    color: var(--g4);
+    font-size: 16px;
+    height:100%;
+    // background:var(--secondary);
+  }
+
+// .main-container{}
+
+.section-padding {
+  padding: 110px 0;
+}

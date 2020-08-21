@@ -296,7 +296,7 @@ thead {
   margin: 0 !important;
 }
 
-.no-gutter > [class*=col-] {
+.no-gutter  [class*=col-] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -882,6 +882,7 @@ thead {
 .intro-title {
   font-size: 60px;
   font-weight: 900;
+
 }
 
 .sub-intro {
@@ -1087,7 +1088,8 @@ thead {
 }
 
 .bg-cover, [class*=banner-] {
-  background-size: cover !important;
+  background-size: cover;
+  
 }
 
 .banner-1 {

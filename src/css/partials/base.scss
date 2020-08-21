@@ -1,52 +1,40 @@
 // ==============================
-// APPLIES TO ALL COMPONENTS
+// Base - Applies to the entire Application
 // =================================
 
-
-html {
-  font-weight: 100;
-  line-height: 1.4
-}
-p {
-  font-weight: 400
-}
-
-
-
-// html,
-// p,
-// h1,
-// h2,
-// h3,
 // h5,
-  .main:nth-of-type(1) {
-    margin-top:0;
-    background:#fff;
-    // padding:0 20px;
-    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+.main:nth-of-type(1) {
+  margin-top:0;
+  padding-top: $nav-height;
+  background: #fff;
+  // padding:0 20px;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+.main-container{}
+.container {
+  // max-width:100%;
+  @media (min-width: $tablet) {
+    width: 100%;
+    max-width: var(--desktop);
   }
-  .container {
-    // max-width:100%;
-    @media (min-width: $tablet) {
-      width: var(--desktop);
-      
-    }
-    @media (min-width: $desktop) {
-      width: var(--hd);
-      
-    }
-    @media (min-width: $hd) {
-      width: var(--wide);
-      max-width:100%;
-      margin:0 auto; 
-      padding:0;
-     
-    }
-    &:nth-of-type(1) #vertical > div:not(:nth-of-type(1))  {
-      max-width:1440px; margin-left:auto; margin-right:auto;
-    }
-  
-
+  @media (min-width: $desktop) {
+    width: 100%;
+    max-width: var(--hd);
+  }
+  @media (min-width: $hd) {
+    width: 100%;
+    max-width: var(--wide);
+    margin: 0 auto;
+    padding: 0;
+  }
+  &:nth-of-type(1) #vertical > div:not(:nth-of-type(1)) {
+//     max-width: 1440px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .btn {
     display: inline-block;
@@ -65,41 +53,34 @@ p {
     font-weight: 600;
     line-height: 1.42857143;
     border-radius: 0px;
-    letter-spacing:2px;
+    letter-spacing: 2px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
- } 
- .label-default {      border-radius:0;  background-color:$gray3; }
+  }
+  .label-default {
+    border-radius: 0;
+    background-color: $gray3;
+  }
 }
 
-
- 
-
-
-// Helper Classes 
+// Helper Classes
 // .mw-bs {
-  .grid-container {
-    display: grid;
-  }
-  
-  .grid-container--fill {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  }
-  
+.grid-container {
+  display: grid;
+}
 
-  // calc(width of desktop page / # of columns you want for the page) 
-  .grid-container--fit {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(calc(#{$hd}/8), 1fr));
-  }
+.grid-container--fill {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+// calc(width of desktop page / # of columns you want for the page)
+.grid-container--fit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(#{$hd}/ 8), 1fr));
+}
 // }
-
-
-
-
-
 
 // UTILITIES Mixins Etc...==============================================================
 // Buttons / Labels ==================================================
@@ -135,12 +116,41 @@ p {
 // }
 
 @mixin grid($width, $gridcount) {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(calc(#{$width}/#{$gridcount}), 1fr));
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(calc(#{$width}/#{$gridcount}), 1fr)
+  );
 }
 
 
-/* ================== LAYOUT =======================*/ 
-.main:nth-of-type(1) {
- 
+p {
+  font-weight: 500;
+}
+
+
+
+// icons -------------------------------
+
+.fa,
+.fas,
+.fab {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+}
+
+
+
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }

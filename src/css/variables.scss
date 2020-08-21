@@ -17,28 +17,14 @@ $gray4: #454545;
 
 
 // $color-primary: #6DB5CA; 
-$color-primary: #30A0E0; 
-$color-secondary: #dae9f2;
-$color-accent: #3550f9;
+$color-primary: #444B8E; 
+$color-secondary: #f2f3ff;
+$color-accent: #559cb2;
+
 
 
 body {
-    color: #454545;
-    background: var(--accent);
-    font-size: 16px;
-    -webkit-overflow-scrolling: touch;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-    .fa {
 
-      font-family:"Font Awesome 5 Brands";
-    }
     /* Brand Colors */
     --b1: #033d58;
     --b2: #009688;
@@ -79,3 +65,5 @@ body {
   }
 
 
+/* Navigation ================================== */
+$nav-height:76px;

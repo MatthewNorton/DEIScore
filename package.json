@@ -20,6 +20,7 @@
   "author": "Dell Boomi",
   "license": "MIT",
   "dependencies": {
+    "bootflat": "^2.0.4",
     "dedent": "0.7.0",
     "postcss-preset-env": "^6.7.0",
     "react": "16.12.0",

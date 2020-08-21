@@ -10,25 +10,35 @@
     background: var(--secondary);
     border-radius: 0;
     max-width: 100%;
+    min-height:$nav-height;
 
    .container {
     max-width:100%;
     width: var(--wide);
     margin:0 auto;
-    
+    padding-left:0; padding-right:0;
   }
   
 }
 
 .navbar-brand {
   position: relative;
-  padding: 27px 0;
-  
+  font-size:2em;
+  line-height:0em;
   transition: all 0.3s ease-in-out;
+  display: block;
+  padding: $nav-height/2 20px ;
+  height:100%;
+  box-sizing:border-box;
+  
 }
 
 .navbar-default .navbar-nav {
-  float:right;
+  
+    @media (min-width: $tablet) {
+      float:right;
+    }
+   
   position: relative;
   transition: all 0.4s ease-in-out;
 
@@ -40,10 +50,9 @@
     }
 
     > a {
-      color: var(--accent);
+      color: var(--primary);
       display: block;
-      
-      font-weight: 300;
+      font-weight: 500;
       padding: 28px 15px;
       overflow: hidden;
       transition: all 0.3s ease-in-out;
