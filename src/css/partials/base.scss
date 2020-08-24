@@ -4,16 +4,27 @@
 
 // h5,
 .main:nth-of-type(1) {
-  margin-top:0;
-  padding-top: $nav-height;
+  margin-top:86px;
+  padding-top: 20px;
   background: #fff;
   // padding:0 20px;
-  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
-    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+//   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+//     0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
 }
-.main-container{}
+.container > .mw-container:not(.no-gutter) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+// .main-container{}
+.main.container > #vertical  {
+    width:100%;
+
+}
+
 .container {
-  // max-width:100%;
+
+
   @media (min-width: $tablet) {
     width: 100%;
     max-width: var(--desktop);
@@ -28,37 +39,37 @@
     margin: 0 auto;
     padding: 0;
   }
-  &:nth-of-type(1) #vertical > div:not(:nth-of-type(1)) {
-//     max-width: 1440px;
-    padding-left:10px;
-    padding-right:10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+//   &:nth-of-type(1) #vertical div:not(.no-gutter) {
+// //     max-width: 1440px;
+//     padding-left:10px;
+//     padding-right:10px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
 
-  .btn {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: normal;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    padding: 12px 15px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.42857143;
-    border-radius: 0px;
-    letter-spacing: 2px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+  // .btn {
+  //   display: inline-block;
+  //   margin-bottom: 0;
+  //   font-weight: normal;
+  //   text-align: center;
+  //   white-space: nowrap;
+  //   vertical-align: middle;
+  //   -ms-touch-action: manipulation;
+  //   touch-action: manipulation;
+  //   cursor: pointer;
+  //   background-image: none;
+  //   border: 1px solid transparent;
+  //   padding: 12px 15px;
+  //   font-size: 14px;
+  //   font-weight: 600;
+  //   line-height: 1.42857143;
+  //   border-radius: 0px;
+  //   letter-spacing: 2px;
+  //   -webkit-user-select: none;
+  //   -moz-user-select: none;
+  //   -ms-user-select: none;
+  //   user-select: none;
+  // }
   .label-default {
     border-radius: 0;
     background-color: $gray3;
@@ -82,38 +93,6 @@
 }
 // }
 
-// UTILITIES Mixins Etc...==============================================================
-// Buttons / Labels ==================================================
-// $brand-colors: ("primary",$brand1),("success", $brand2),("warning",$brand3), ("danger",$brand4), ("info",$brand5);
-// .mw-bs{
-//   @each $color in $brand-colors {
-//     .label-#{nth($color,1)} {
-//       background-color: nth($color,2);
-
-//     }
-//     .btn-#{nth($color,1)} {
-//       background-color: nth($color,2);
-//       transition:all 0.3s ease;
-//       &:hover, &:focus {
-//         background-color: transparent;
-//         color: nth($color,2);
-//         box-shadow: 0 0 0 1px nth($color,2);
-//       }
-//       &.ghost {
-//         color: nth($color,2);
-//         box-shadow: 0 0 0 1px nth($color,2);
-//         background-color:transparent;
-//         transition:all 0.3s ease;
-//         &:hover, &:focus {
-//           background-color: transparent;
-//           opacity:0.5;
-//           color: var(--b1);
-//           box-shadow: 0 0 0 1px var(--b1);
-//         }
-//       }
-//     }
-//   }
-// }
 
 @mixin grid($width, $gridcount) {
   display: grid;
@@ -121,11 +100,6 @@
     auto-fit,
     minmax(calc(#{$width}/#{$gridcount}), 1fr)
   );
-}
-
-
-p {
-  font-weight: 500;
 }
 
 

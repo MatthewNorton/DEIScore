@@ -2,7 +2,7 @@
 //------------------------------------------------------
 $button-normal:                  $mediumgray-dark !default;
 $button-default:                 $white !default;
-$button-primary:                 $aqua-dark !default;
+$button-primary:                 $primary-color !default;
 $button-success:                 $grass-dark !default;
 $button-danger:                  $grapefruit-dark !default;
 $button-warning:                 $sunflower-dark !default;
@@ -33,7 +33,10 @@ $button-shadow:                  inset 0 1px 2px rgba(0, 0, 0, .125) !default;
    */
   .btn {
     color: $button-font-color-light;
-
+    border-radius:36px;
+    padding: 6px 42px;
+    font-size:18px;
+    font-weight:500;
     &,
     &.disabled, 
     &[disabled] {
@@ -107,6 +110,7 @@ $button-shadow:                  inset 0 1px 2px rgba(0, 0, 0, .125) !default;
       &[disabled] {
           border-color: $button-primary;
           background-color: $button-primary;    
+          color:#fff;
       }
       &:hover, 
       &:focus {
@@ -126,7 +130,8 @@ $button-shadow:                  inset 0 1px 2px rgba(0, 0, 0, .125) !default;
       &.disabled,
       &[disabled] {
           border-color: $button-info;
-          background-color: $button-info;    
+          background-color: $button-info; 
+          color:#fff;   
       }
       &:hover, 
       &:focus {

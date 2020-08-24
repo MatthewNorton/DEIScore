@@ -6,26 +6,26 @@
 
 // @import './vendor/materialize.css';
 // @import './vendor/bootstrap.scss';
-
+// @import 'https://assets.manywho.com/css/flow-ui-bootstrap-3.26.1.css';
 @import './variables.scss';
-@import './global.scss'; 
+@import './framework.scss'; 
 @import './vendor/flow-reset.scss';
+
+
+
 .mw-bs {  
+    
     @import './vendor/bootflat.scss';
     @import './modules/helpers.scss'; 
     @import './partials/base.scss';
    
     
     // Components / Partials
-   
 
-    @import './partials/boxes.scss'; 
-    @import './partials/form-fields.scss';
     @import './partials/navigation.scss';
-    @import './partials/banner.scss'; 
+    @import './partials/hero.scss'; 
+    @import './partials/boxes.scss'; 
+    @import './partials/banners.scss'; 
+
     
-    // @import './theme.scss'; 
-    // @import './vendor/custom/main.css';
-    // @import './vendor/custom/rehub.scss'; 
-    
-}
+} 

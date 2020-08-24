@@ -21,22 +21,42 @@ $footer-logo-color:                  $white !default;
   .footer {
     padding: 40px 0;
     background-color: $footer-background-color;
-
-    &-logo,
-    &-nav {
-      float: left;
-      padding: 0 20px;
-      width: 20%;
+    position:absolute;
+    left:0; right:0; bottom:0;
+        /* bottom: 0; */
+    transform: translateY(100%);
+    &-content { 
+      width:100%;
+      display:flex;
+       display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-content: stretch;
+      align-items: center;
     }
+    &-nav {
+             order: 0;
+        flex: 0 1 auto;
+        align-self: auto;
+        align-self:flex-start;
+        
+      padding: 0 20px;
+      
+    }
+
     @media (max-width: 768px) {
       &-logo {
         margin-bottom: 20px;
       }
+       &-content {
+         flex-wrap: wrap;
+      }
       &-logo,
       &-nav {
-        float: none;
         display: block;
         width: 100%;
+
       }      
     }
     &-logo {
@@ -79,4 +99,13 @@ $footer-logo-color:                  $white !default;
 
 }
 
+
+.footer-content {
+
+}
+
+
+.footer-nav {
+
+    }
 

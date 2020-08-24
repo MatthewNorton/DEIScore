@@ -6,12 +6,7 @@ import * as React from 'react';
 class Materialize extends React.Component<any, any> {
 
  componentDidMount() {
-        M.AutoInit();
-        console.log('Loaded');
-        document.addEventListener('DOMContentLoaded', function() {
-            const elems = document.querySelectorAll('.parallax');
-            // const instances = M.Parallax.init(elems, options);
-          });
+      
     }
  render()  {
 

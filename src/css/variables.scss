@@ -3,11 +3,6 @@ $hd: 1360px;
 $desktop: 1028px;
 $tablet: 768px;
 
-$brand1: #033d58;
-$brand2: #009688;
-$brand3: #ff7c66;
-$brand4: #0087cc;
-$brand5: #fedb00;
 $gray1: #eeeeee;
 $gray2: #ababab;
 $gray3: #808080;
@@ -17,20 +12,66 @@ $gray4: #454545;
 
 
 // $color-primary: #6DB5CA; 
-$color-primary: #444B8E; 
-$color-secondary: #f2f3ff;
-$color-accent: #559cb2;
+$primary-color: #32b5e0; 
+// $primary-color: #444B8E; 
+$secondary-color: #f2f3ff;
+$accent-color: #559cb2;
 
 
+// prefix elements
+// $prefix-webkit:               true !global;
+// $prefix-moz:                  true !global;
+// $prefix-spec:                 true !global;
+
+// color elements
+$white:                       #FFF !default;
+$black:                       #000 !default;
+$dark:                        #333 !default;
+
+
+
+
+$bluejeans-dark:              #4A89DC !default;
+$bluejeans-light:             #5D9CEC !default;
+
+$aqua-dark:                   #3BAFDA !default;
+$aqua-light:                  #4FC1E9 !default;
+
+$mint-dark:                   #37BC9B !default;
+$mint-light:                  #48CFAD !default;
+
+$grass-dark:                  #8CC152 !default;
+$grass-light:                 #A0D468 !default;
+
+$sunflower-dark:              #F6BB42 !default;
+$sunflower-light:             #FFCE54 !default;
+
+$bittersweet-dark:            #E9573F !default;
+$bittersweet-light:           #FC6E51 !default;
+
+$grapefruit-dark:             #DA4453 !default;
+$grapefruit-light:            #ED5565 !default;
+
+$lavender-dark:               #967ADC !default;
+$lavender-light:              #AC92EC !default;
+
+$pinkrose-dark:               #D770AD !default;
+$pinkrose-light:              #EC87C0 !default;
+
+$lightgray-dark:              #E6E9ED !default;
+$lightgray-light:             #F5F7FA !default;
+
+$mediumgray-dark:             #AAB2BD !default;
+$mediumgray-light:            #CCD1D9 !default;
+
+$darkgray-dark:               #434A54 !default;
+$darkgray-light:              #656D78 !default;
+ 
 
 body {
 
     /* Brand Colors */
-    --b1: #033d58;
-    --b2: #009688;
-    --b3: #ff7c66;
-    --b4: #0087cc;
-    --b5: #fedb00;
+
     /* Brand Gray / Grey Colors */
     --g1: #eeeeee;
     --g2: #ababab;
@@ -59,9 +100,9 @@ body {
     --motion: cubic-bezier(0.19, 1, 0.22, 1);
 
 
-    --primary:#444B8E; 
-    --secondary:#f2f3ff;
-    --accent:#559cb2;
+    --primary:#32b5e0; 
+    --secondary:#f2fcff;
+    --accent:#30d690;
   }
 
 

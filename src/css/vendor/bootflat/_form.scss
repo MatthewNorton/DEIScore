@@ -2,7 +2,7 @@
 //------------------------------------------------------
 $form-normal:                      $mediumgray-dark !default;
 $form-default:                     $white !default;
-$form-primary:                     $aqua-dark !default;
+$form-primary:                     $primary-color !default;
 $form-success:                     $grass-dark !default;
 $form-danger:                      $grapefruit-dark !default;
 $form-warning:                     $sunflower-dark !default;
@@ -41,6 +41,7 @@ $search-icon-line-height:          30px !default;
       }
       &:focus {
           border-color: $form-primary;
+          box-shadow:inherit;
       }
       &::-moz-placeholder,
       &:-ms-input-placeholder,

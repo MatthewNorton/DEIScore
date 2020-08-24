@@ -1,6 +1,6 @@
 .featured-item {
   transition: all 0.3s ease;
-
+  
   &.hover-outline h2, &.border-box h2 {
     transition: all 0.3s ease;
   }
@@ -39,7 +39,7 @@
   }
 
   h2 {
-    font-weight: 500;
+    font-weight:400; 
   }
 }
 
@@ -50,26 +50,30 @@
 }
 
 .featured-container {
+
    [class*="col-"] {
-      border-left:1px solid #000;
+      border-left:1px solid #ccd1d9;
+     
       &:first-child {
         border-left:0;
       }
       &:nth-child(odd) {
-        background-color:$color-secondary;
+        .featured-box { background-color:$secondary-color;  border:1px solid #ddd }
       }
        &:nth-child(even) {
-        background-color:$color-accent;
+         .featured-box { background-color:$accent-color; color:#fff;  border-bottom:2px solid #ddd; }
       }
   }
 }
 
 .featured-box {
+  border-radius:8px;
   position: relative;
   overflow: hidden;
   min-height: 300px;
+  margin: 10px;
   transition: all 0.3s;
-
+//   box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1);
   
 }
 
@@ -109,7 +113,7 @@
   }
 
   h2 {
-    font-weight: 500;
+    font-weight: 300;
   }
 }
 

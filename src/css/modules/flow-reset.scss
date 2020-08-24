@@ -2,7 +2,13 @@
 Flow Reset is to remove default styling from flow's existing stylesheets 
 and bad styling decisions -_- WITHOUT using important tags. 
 ------------------------------------------------------------------------------ n*/
-
+.mw-bs {
+  background:initial;
+  font-style: inherit;
+  color: inherit;
+  font-size: inherit;
+  height:100%;
+}
 
 #manywho {
   overflow-y: inherit;
@@ -31,5 +37,21 @@ and bad styling decisions -_- WITHOUT using important tags.
       .navbar > .container-fluid .navbar-brand {
         margin-left: initial;
       }
-      
+
+/* Form Reset */
+
+  .form-control {
+
+    color: inherit;
+    background-color: inherit;
+    background-image: inherit;
+
+    box-shadow: inherit;
+
+  }
+ .mw-outcomes > .row:not(.block) {
+    display:block;
+  }
+
 }
+

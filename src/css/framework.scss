@@ -8,8 +8,8 @@
     line-height: 1.4;
   }
   body {
-    color: #454545;
-    background: $color-secondary;
+    color:var(--g4);
+    background: $accent-color;
     font-size: 16px;
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased;
@@ -20,23 +20,16 @@
     font-style: normal;
     margin: 0;
     padding: 0;
+    font-weight:500;
+    @media(min-width:$wide) {
+      font-size:0.8vw;
+    }
     .fa {
   
       font-family:"Font Awesome 5 Brands";
     }
   }
-  .mw-bs {
-    background:initial;
-    font-family: fieldwork,sans-serif;
-    font-style: normal;
-    color: var(--g4);
-    font-size: 16px;
-    height:100%;
-    // background:var(--secondary);
-  }
+
 
 // .main-container{}
 
-.section-padding {
-  padding: 110px 0;
-}

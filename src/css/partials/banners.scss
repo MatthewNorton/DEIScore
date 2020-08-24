@@ -1,0 +1,12 @@
+.banner-wrapper #vertical  {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    flex-wrap:wrap;
+}
+
+.banner-wrapper #vertical p {
+    margin: 40px 0;
+    width:90%;
+}
